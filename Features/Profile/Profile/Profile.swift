@@ -7,3 +7,28 @@
 //
 
 import Foundation
+
+protocol ProfileFunctions {
+    func displayProfile()
+}
+
+public struct ProfileStruct{
+ 
+    private var name:String = ""
+    public init()
+    {
+    }
+    public init (name:String)
+    {
+        self.name = name
+    }
+    
+}
+extension ProfileStruct:ProfileFunctions
+{
+    public func displayProfile() {
+        print("Hello I am \(self.name)")
+    }
+    
+    
+}

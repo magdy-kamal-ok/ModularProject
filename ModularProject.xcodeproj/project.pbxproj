@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041D459122FA1EA000848821 /* Profile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041D459022FA1EA000848821 /* Profile.framework */; };
+		041D459222FA1EA700848821 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041D458E22FA1EA000848821 /* Common.framework */; };
+		041D459322FA1EA700848821 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 041D458E22FA1EA000848821 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		041D459522FA1EA700848821 /* Profile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 041D459022FA1EA000848821 /* Profile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0428126C22FA0E010009A856 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428126B22FA0E010009A856 /* AppDelegate.swift */; };
 		0428126E22FA0E010009A856 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428126D22FA0E010009A856 /* ViewController.swift */; };
 		0428127122FA0E010009A856 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0428126F22FA0E010009A856 /* Main.storyboard */; };
@@ -33,7 +37,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		041D457922FA1C8C00848821 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				041D459522FA1EA700848821 /* Profile.framework in Embed Frameworks */,
+				041D459322FA1EA700848821 /* Common.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		041D458E22FA1EA000848821 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		041D459022FA1EA000848821 /* Profile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Profile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0428126822FA0E010009A856 /* ModularProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0428126B22FA0E010009A856 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0428126D22FA0E010009A856 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041D459222FA1EA700848821 /* Common.framework in Frameworks */,
+				041D459122FA1EA000848821 /* Profile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041D455E22FA18CE00848821 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				041D458E22FA1EA000848821 /* Common.framework */,
+				041D459022FA1EA000848821 /* Profile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0428125F22FA0E010009A856 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +113,7 @@
 				0428127F22FA0E030009A856 /* ModularProjectTests */,
 				0428128A22FA0E030009A856 /* ModularProjectUITests */,
 				0428126922FA0E010009A856 /* Products */,
+				041D455E22FA18CE00848821 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +168,7 @@
 				0428126422FA0E010009A856 /* Sources */,
 				0428126522FA0E010009A856 /* Frameworks */,
 				0428126622FA0E010009A856 /* Resources */,
+				041D457922FA1C8C00848821 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

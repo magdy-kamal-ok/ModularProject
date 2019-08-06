@@ -7,3 +7,22 @@
 //
 
 import Foundation
+
+public protocol CommonFunctions {
+    func displayCommon()
+}
+
+public struct CommonStruct {
+    public init()
+    {
+        
+    }
+}
+extension CommonStruct:CommonFunctions
+{
+    public func displayCommon() {
+        print("Hello From Common")
+    }
+    
+    
+}

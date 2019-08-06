@@ -7,12 +7,17 @@
 //
 
 import UIKit
-
+import Profile
+import Common
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let pro = ProfileStruct(name: "test")
+        pro.displayProfile()
+        let com = CommonStruct.init()
+        com.displayCommon()
+
     }
 
 

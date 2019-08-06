@@ -10,6 +10,7 @@
 		041D453C22FA112300848821 /* Profile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041D453222FA112200848821 /* Profile.framework */; };
 		041D454122FA112300848821 /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041D454022FA112300848821 /* ProfileTests.swift */; };
 		041D454322FA112300848821 /* Profile.h in Headers */ = {isa = PBXBuildFile; fileRef = 041D453522FA112200848821 /* Profile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		041D455622FA11DB00848821 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041D455522FA11DB00848821 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		041D453B22FA112300848821 /* ProfileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		041D454022FA112300848821 /* ProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTests.swift; sourceTree = "<group>"; };
 		041D454222FA112300848821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041D455522FA11DB00848821 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				041D453522FA112200848821 /* Profile.h */,
 				041D453622FA112200848821 /* Info.plist */,
+				041D455522FA11DB00848821 /* Profile.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					041D453122FA112200848821 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					041D453A22FA112300848821 = {
 						CreatedOnToolsVersion = 10.0;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041D455622FA11DB00848821 /* Profile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		041D454722FA112300848821 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ownprojects.Profile;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +373,7 @@
 		041D454822FA112300848821 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +399,7 @@
 		041D454A22FA112300848821 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J685J65365;
 				INFOPLIST_FILE = ProfileTests/Info.plist;
@@ -409,6 +418,7 @@
 		041D454B22FA112300848821 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J685J65365;
 				INFOPLIST_FILE = ProfileTests/Info.plist;
